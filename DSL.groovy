@@ -13,7 +13,8 @@ void createPipeline(it) {
     def desc = it.description
     pipelineJob(jobname) {
         description(desc)
-
+        parameters {
+            choiceParam('Gender', 'select genger', [ 'male', 'female', 'diverse' ])
         definition {
             cpsScm {
                 scm {
