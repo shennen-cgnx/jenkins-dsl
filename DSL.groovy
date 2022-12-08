@@ -14,7 +14,7 @@ void createPipeline(it) {
     pipelineJob(jobname) {
         description(desc)
         parameters {
-            choiceParam('Gender', 'select genger', [ 'male', 'female', 'diverse' ])
+            choiceParam('Gender', [ 'male', 'female', 'diverse' ])
         definition {
             cpsScm {
                 scm {
