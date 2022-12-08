@@ -15,6 +15,7 @@ void createPipeline(it) {
         description(desc)
         parameters {
             choiceParam('Gender', [ 'male', 'female', 'diverse' ])
+        }
         definition {
             cpsScm {
                 scm {
